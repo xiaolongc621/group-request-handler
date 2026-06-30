@@ -1,0 +1,23 @@
+[plugin]
+enabled = true
+config_version = "1.0.0"
+
+[admin]
+# 管理员 QQ 号列表
+admin_qqs = ["3122662914"]
+
+[webhook]
+host = "127.0.0.1"
+port = 18081
+path = "/maibot/group_request"
+secret = ""
+
+[whitelist]
+# 开启白名单强制：不在白名单的群会自动退出
+enforce_whitelist = true
+# 白名单群号列表（空=不限制）
+group_whitelist = ["326827675"]
+# 巡检间隔秒数
+check_interval_seconds = 60
+# 拒绝邀请后是否自动退群
+leave_on_invite_reject = true

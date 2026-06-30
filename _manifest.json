@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "id": "ling.group-request-handler",
+  "version": "1.0.0",
+  "name": "群聊申请处理",
+  "description": "监听群聊邀请，管理员审核 + 白名单管理 + 群列表查询",
+  "author": {
+    "name": "ling",
+    "url": "https://github.com"
+  },
+  "license": "MIT",
+  "urls": {
+    "repository": "https://github.com/ling/group-request-handler"
+  },
+  "host_application": {
+    "min_version": "1.0.0",
+    "max_version": "1.99.99"
+  },
+  "sdk": {
+    "min_version": "2.0.0",
+    "max_version": "2.99.99"
+  },
+  "dependencies": [
+    {
+      "type": "python_package",
+      "name": "aiohttp",
+      "version_spec": ">=3.9.0"
+    }
+  ],
+  "capabilities": [
+    "send.text",
+    "config.get",
+    "api.call"
+  ],
+  "i18n": {
+    "default_locale": "zh-CN"
+  }
+}
